@@ -26,7 +26,7 @@ for (let i = 0; i < mailList.length; i++) {
                     break
                 }
             }
-        } while (password.at(i) === userPass) // non mi verifia la condizione
+        } while (password.at(i) !== userPass) // non mi verifia la condizione
     }
 }
 alert(message)
@@ -48,7 +48,7 @@ if (message === 'Non sei registrato!') {
                 alert('Hai effettuato la registrazione con successo!')
                 break
             }
-        } while (userPass === confirmPass) // non mi verifia la condizione
+        } while (userPass !== confirmPass) // non mi verifia la condizione
         
     }
 }
